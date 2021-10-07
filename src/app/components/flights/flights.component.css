@@ -1,0 +1,34 @@
+.mr{
+    margin: 78px !important;
+}
+.ctr{
+    background-color: darkgreen;
+}
+.success{
+    visibility: hidden !important;
+  }
+  .danger{
+    visibility: visible !important;
+  }
+  .tableDesign{
+      position: absolute !important;
+      top:50vh !important;
+      right: 12vw !important;
+      width: 80vw !important;
+      text-align: center !important;
+  }
+  .theadDesign{
+      font-family: "Cherry", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+  }
+  tr{
+    font-family: "Cherry", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+ td{
+     color: rgb(35, 148, 69) !important;
+ }
+  th{
+      color:white !important;
+      text-align: center !important;
+  }

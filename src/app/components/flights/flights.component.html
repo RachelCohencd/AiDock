@@ -1,0 +1,48 @@
+
+
+<div class="row mr" [ngClass]="status? 'danger' : 'success'">
+  <table class="table table-striped tableDesign">
+    <thead class="theadDesign" style="background-color: rgb(35, 148, 69);">
+    <tr class="ctr" style="background-color: rgb(35, 148, 69)">
+      <th>Origin</th>
+      <th>Number of stops</th>
+      <th>Destination</th>
+      <th>Total flight time</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="background-color: white" *ngFor="let p of arrayV">
+      <td>{{p.origin}}</td>
+      <td>{{p.Stops.length}}</td>
+      <td>{{p.destination}}</td>
+      <td>{{p.TotalTimeHour}}:{{p.TotalTimeMinutes}}</td>
+      <td>{{p.TotalPrice}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<!-- <div class="row mr" >
+  <table class="table table-striped">
+    <thead>
+    <tr class="ctr">
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>StartTime</th>
+      <th>EndTime</th>
+      <th>Number of Begs</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let flight of arrayflights">
+      <td>{{flight.origin}}</td>
+      <td>{{flight.destination}}</td>
+      <td>{{flight.startTime}}</td>
+      <td>{{flight.endTime}}</td>
+      <td>{{flight.numberOfBegs}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div> -->
+
+

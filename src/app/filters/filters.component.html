@@ -1,0 +1,24 @@
+<div>
+  <input type="range" id="volume" name="volume"
+         min="0" max="11" class="mr">
+  <label for="volume">Price</label>
+</div>
+<div>
+<input type="text" [ngModel]="originMode" />
+<label for="origin">Origin</label>
+<p>{{origin}} this</p>
+</div>
+<div>
+  <input type="text" [ngModel]="originMode">
+  <label for="destination">Destination</label>
+  </div>
+  <!-- <input type='button' value='Search' /> -->
+  <form action="/action_page.php">
+    <label for="stations">Choose Number of stations</label>
+    <select name="stations" id="cars">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </form>

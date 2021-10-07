@@ -1,0 +1,38 @@
+<div class="container text-center">
+  <h1>{{title}}</h1>
+</div>
+<img src="../assets/Airport.png" class="LogoDesign">
+<div class="mp"  >
+  <!-- <app-filters (SearchFlight)="onSearchByCountries($event)"></app-filters> -->
+  <div [ngClass]="status? 'danger' : 'success'">
+    <input type="range"  style="background-color: rgb(35, 148, 69);" id="volume" name="volume" (click)="changeColor();"
+           min="750" max="3000" class="mr ranglength PriceDesign" [(ngModel)]="PriceMode" (change)="updateOnChangePrice(PriceMode)">
+    <label class="PriceTextDesign" style="color: rgb(35, 148, 69)">Price {{PriceMode}}</label>
+  </div>
+  <button (click)=" clickToHidden()" [ngClass]="status? 'danger' : 'success'" class="goBackDesign">New Origin, New Destination</button>
+  <div  [ngClass]="status? 'success' : 'danger'">
+  <div class="OriginDesign">
+  <input type="text" style="border-right: none;border-top: none;border-left: none;outline: none;color:rgb(35, 148, 69);border-color: rgb(35, 148, 69);text-align: center ;" [(ngModel)]="originMode" placeholder="Origin">
+</div>
+  <input  type='button' (click)="updateOnMain(originMode,destinationMode);" value="Flight Routes" [ngClass]="status? 'success' : 'danger'" class="FilterButtonDesign"/>
+  <p class="messageOfRequiredDesign">{{messageOfRequired}}</p>
+  
+  <div class="DestinatDesign">
+    <input type="text" [(ngModel)]="destinationMode" style="border-right: none;border-top: none;border-left: none;outline: none;color:rgb(35, 148, 69);border-color: rgb(35, 148, 69);text-align: center ;" placeholder="Destination">
+    </div>
+  </div>
+    <form class="selectDesign"  action="/action_page.php" [ngClass]="status? 'danger' : 'success'">
+      <select name="stations"  style="text-align: center;color: rgb(35, 148, 69);border-color: rgb(35, 148, 69);outline: none;" id="cars" (change)="selectNumberOfStations($event.target.value)">
+        <option value="-1">Choose Number of Stations you want</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </form>
+</div>
+<app-flights (emitFunctionOfParent)="myMethod($event)"></app-flights>
+<!-- <app-flights [oneOrigin]="oneOrigin"></app-flights> -->
+<!-- <app-the-all-flights></app-the-all-flights> -->
+

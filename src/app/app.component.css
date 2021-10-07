@@ -1,0 +1,109 @@
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: #405065;
+}
+.by-country, .by-name {
+  text-decoration: underline;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.mp{
+  margin: 78px !important;
+}
+.ranglength{
+  width: 171px !important;
+}
+.success{
+  visibility: hidden !important;
+}
+.danger{
+  visibility: visible !important;
+}
+.OriginDesign{
+  right: 66% !important;
+  position: absolute !important;
+  top: 50vh;
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  
+}
+.DestinatDesign{
+  right: 22% !important;
+  position: absolute !important;
+  top: 50vh;
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.FilterButtonDesign{
+  right: 45% !important;
+  position: absolute !important;
+  top: 70vh;
+  width: 15vw;
+  height: 7vh;
+  border-color: rgb(35, 148, 69);
+  border-radius:10% !important;
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: white !important;
+}
+.LogoDesign{
+  width: 22%;
+  position: absolute !important;
+  right: 40%;
+}
+.messageOfRequiredDesign{
+  right: 44% !important;
+  position: absolute !important;
+  top: 63vh;
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.goBackDesign{
+  position: absolute !important;
+  top:40vh !important;
+  right: 13% !important;
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border-color: rgb(35, 148, 69);
+  /* border-radius:10% !important; */
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  background-color: white !important;
+}
+.selectDesign{
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  right: 40% !important;
+  top: 40vh !important;
+  position: absolute !important;
+  outline:none !important;
+}
+.PriceTextDesign{
+  top:40vh !important;
+  position: absolute !important;
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font: size 15px;
+  right:73% !important;
+}
+.PriceDesign{
+  top:40vh !important;
+  position: absolute !important;
+  font-family: "Cherry", Arial, Helvetica, sans-serif;
+  font: size 15px;
+  right: 80% !important;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 200px;
+    height:20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: white;
+    opacity: 0.5;
+    width: 10px;
+    height: 26px;
+}
